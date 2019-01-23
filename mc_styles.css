@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* 
         New Perspectives on HTML5 and CSS3, 7th Edition
         Tutorial 7
@@ -9,3 +11,17 @@
   
         Filename: mc_styles.css
 */
+
+html {
+        background: url(serer.jpg) fixed no-repeat center;
+        height: 100%;
+}
+
+body {
+        min-height: 100%;
+        margin: 0px auto;
+        min-width: 320px;
+        max-width: 1020px;
+        width: 100%;
+        background-color: white;
+}
