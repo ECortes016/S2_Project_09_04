@@ -15,7 +15,7 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Millennium Computers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="mc_forms.css" />
     <link rel="stylesheet" href="mc_styles.css">
@@ -26,14 +26,15 @@
 
     <header>
         <img src="mc_logo.png" alt="">
-        <nav>
+
+        <!-- <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">FAQ</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <form action="http://www.mill_computers.com/orders/process.cgi" method="POST">
@@ -142,11 +143,11 @@
                 <div class="formRow">
                     <label for="dvd">DVD Burner</label>
 
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="yesNo" value="yes" id="yes">
+                    <label class="rightSide" for="yes">Yes</label>
+                    <input class="rightSide" type="radio" name="dvd" value="yes" id="yes">
 
-                    <label for="no">No</label>
-                    <input type="radio" name="yesNo" value="no" id="no">
+                    <label class="rightSide" for="no">No</label>
+                    <input class="rightSide" type="radio" name="dvd" value="no" id="no">
 
                 </div>
 
@@ -154,28 +155,30 @@
                 <div class="formRow">
                     <label for="tuner">Tuner Card</label>
 
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="yesNo" value="yes" id="yes">
+                    <label class="rightSide" for="yes">Yes</label>
+                    <input class="rightSide" type="radio" name="tuner" value="yes" id="yes">
 
-                    <label for="no">No</label>
-                    <input type="radio" name="yesNo" value="no" id="no">
+                    <label class="rightSide" for="no">No</label>
+                    <input class="rightSide" type="radio" name="tuner" value="no" id="no">
 
                 </div>
 
                 <div class="formRow">
                     <label for="media">Media Card</label>
 
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="yesNo" value="yes" id="yes">
+                    <label class="rightSide" for="yes">Yes</label>
+                    <input class="rightSide" type="radio" name="mcard" value="yes" id="yes">
 
-                    <label for="no">No</label>
-                    <input type="radio" name="yesNo" value="no" id="no">
+                    <label class="rightSide" for="no">No</label>
+                    <input class="rightSide" type="radio" name="mcard" value="no" id="no">
 
                 </div>
-            </fieldset>
 
-            <label for="warranty">24-month extended warranty</label>
-            <input type="checkbox" name="warranty" id="warranty">
+                <div id="warranty" class="formRow">
+                    <label for="warranty">24-month extended warranty</label>
+                    <input type="checkbox" name="warranty" id="warranty">
+                </div>
+            </fieldset>
 
         </fieldset>
 
@@ -186,6 +189,8 @@
         </div>
 
     </form>
+
+
 
 </body>
 

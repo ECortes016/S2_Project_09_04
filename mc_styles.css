@@ -12,8 +12,11 @@
         Filename: mc_styles.css
 */
 
+/* WINDOW STYLES */
+
+
 html {
-        background: url(serer.jpg) fixed no-repeat center;
+        background: #686CCA;
         height: 100%;
 }
 
@@ -23,5 +26,35 @@ body {
         min-width: 320px;
         max-width: 1020px;
         width: 100%;
-        background-color: white;
+        background-color: #CED0ED
+}
+
+/* HEADER STYLES */
+
+header {
+        width: 100%;
+
+        clear: both;
+        display: table;
+        content: "";
+}
+
+img {
+        width: 100%;
+        display: block;
+}
+
+nav {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0px;
+        background-color: #B0B3E3;
+
+}
+
+nav ul li {
+        display: inline;
+        width: 25%;
+        float: left;
+        text-align: center;
 }
