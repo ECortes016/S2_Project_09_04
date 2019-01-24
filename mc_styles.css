@@ -13,7 +13,12 @@
 */
 
 /* WINDOW STYLES */
+/* The html page is set to take up 100% of the browser window height. The body is also taking up 100% height of the html page. The logo image at the top of the page is set to a width of 100% which is taken from the body. */
 
+html,
+body {
+        height: 100%;
+}
 
 html {
         background: #686CCA;
@@ -26,13 +31,7 @@ body {
         min-width: 320px;
         max-width: 1020px;
         width: 100%;
-        background-color: #CED0ED
-}
-
-/* HEADER STYLES */
-
-header {
-        width: 100%;
+        background-color: #CED0ED;
 
         clear: both;
         display: table;
@@ -42,19 +41,4 @@ header {
 img {
         width: 100%;
         display: block;
-}
-
-nav {
-        display: inline-block;
-        width: 100%;
-        padding: 15px 0px;
-        background-color: #B0B3E3;
-
-}
-
-nav ul li {
-        display: inline;
-        width: 25%;
-        float: left;
-        text-align: center;
 }

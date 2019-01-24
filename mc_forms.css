@@ -9,16 +9,18 @@
         Author: Emmanuel Cortes Castaneda
         Date: 1.17.19  
   
-        Filename: mc_forms.css */
+        Filename: mc_forms.css 
+*/
 
-/* BODY STYLES */
 
 /* FORM STYLES */
+/* All input boxes are placed within divs which take up 75% of the form width which basically gives it an entire row. The form itself is displayed as a block with the width being 75% of the body. It is also given a border with some border radius to give it rounded edges. The legends are also given a border with some border radius as well while all of the fieldsets are to NOT display any borders. */
 
 div.formRow {
     display: block;
-    width: 100%;
+    width: 75%;
     height: 40px;
+    margin: 0 auto;
 }
 
 form {
@@ -26,7 +28,7 @@ form {
     width: 75%;
     margin: 55px auto;
     background-color: #F3F3FB;
-    border: 2px whitesmoke outset;
+    border: 2px grey outset;
     border-radius: 25px;
     padding-top: 25px;
 }
@@ -36,12 +38,15 @@ form legend {
     padding: 5px;
     border: 2px white outset;
     border-radius: 5px;
-    color: #FDF742
+    color: #FDF742;
+    margin: 0 auto;
 }
 
 fieldset {
     border: none;
 }
+
+/* All of the input boxes are floated to the right side of the form. The submit buttons at the bottom of the form are being aligned to the center of the page with some padding to add more space around it.  */
 
 input[type="text"],
 input[type="email"],
@@ -55,14 +60,32 @@ select {
     width: 35%;
 }
 
-select option {
-    text-align: center;
-}
-
 div#warranty {
     text-align: center;
 }
 
 .rightSide {
-    padding-left: 55px;
+    float: right;
+    width: 5%;
+}
+
+div#buttons {
+    padding: 50px;
+    text-align: center;
+}
+
+/* VALIDATION */
+/* All of the input boxes that are filled out correctly will be colored in green while the wrong formatted input boxes will be colored into a red. */
+
+
+input[type] {
+    background: #F3F3FB
+}
+
+input[type]:valid:focus {
+    background: #B0E57C url(mc_go.png) right no-repeat;
+}
+
+input[type]:invalid:focus {
+    background: #FFAEAE url(mc_stop.png) right no-repeat;
 }

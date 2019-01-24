@@ -17,6 +17,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Millennium Computers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
     <link rel="stylesheet" href="mc_forms.css" />
     <link rel="stylesheet" href="mc_styles.css">
     <script src="mc_script.js"></script>
@@ -26,16 +29,9 @@
 
     <header>
         <img src="mc_logo.png" alt="">
-
-        <!-- <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </nav> -->
     </header>
+
+    <!-- The form element contains two main fieldsets which both contain multiple labels and inputs. Most labels are associated with an input element which allows the user to interact with the page by filling out the questions. The state input contains a datalist which is set to allow the user to choose their state (given 50 options to choose from). -->
 
     <form action="http://www.mill_computers.com/orders/process.cgi" method="POST">
 
@@ -66,7 +62,59 @@
 
                 <div class="formRow">
                     <label for="state">State</label>
-                    <input type="text" id="state" name="custState" required>
+                    <input type="text" id="state" name="custState" list="stateList" required>
+                    <datalist id="stateList">
+                        <option value="AL"></option>
+                        <option value="AK"></option>
+                        <option value="AZ"></option>
+                        <option value="AR"></option>
+                        <option value="CA"></option>
+                        <option value="CO"></option>
+                        <option value="CT"></option>
+                        <option value="DE"></option>
+                        <option value="FL"></option>
+                        <option value="GA"></option>
+                        <option value="HI"></option>
+                        <option value="ID"></option>
+                        <option value="IL"></option>
+                        <option value="IN"></option>
+                        <option value="IA"></option>
+                        <option value="KS"></option>
+                        <option value="KY"></option>
+                        <option value="LA"></option>
+                        <option value="ME"></option>
+                        <option value="MD"></option>
+                        <option value="MA"></option>
+                        <option value="MI"></option>
+                        <option value="MN"></option>
+                        <option value="MS"></option>
+                        <option value="MO"></option>
+                        <option value="MT"></option>
+                        <option value="NE"></option>
+                        <option value="NV"></option>
+                        <option value="NH"></option>
+                        <option value="NJ"></option>
+                        <option value="NM"></option>
+                        <option value="NY"></option>
+                        <option value="NC"></option>
+                        <option value="ND"></option>
+                        <option value="OH"></option>
+                        <option value="OK"></option>
+                        <option value="OR"></option>
+                        <option value="PA"></option>
+                        <option value="RI"></option>
+                        <option value="SC"></option>
+                        <option value="SD"></option>
+                        <option value="TN"></option>
+                        <option value="TX"></option>
+                        <option value="UT"></option>
+                        <option value="VT"></option>
+                        <option value="VA"></option>
+                        <option value="WA"></option>
+                        <option value="WV"></option>
+                        <option value="WI"></option>
+                        <option value="WY"></option>
+                    </datalist>
                 </div>
 
                 <div class="formRow">
@@ -76,8 +124,10 @@
 
                 <div class="formRow">
                     <label for="tel">Phone Number</label>
-                    <input type="tel" id="tel" name="custTel">
+                    <input type="tel" id="tel" name="custTel" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
                 </div>
+
+
 
                 <div class="formRow">
                     <label for="email">Email Address</label>
